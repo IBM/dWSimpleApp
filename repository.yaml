@@ -1,0 +1,7 @@
+id: dWTVSimpleApp
+event_id: web
+event_organizer: dw-mailbag
+runtimes: 
+  - Cloud Foundry
+services: 
+  - Continuous-delivery
