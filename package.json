@@ -7,11 +7,10 @@
 	},
 	"dependencies": {
 		"express": "4.15.x",
-		"cfenv": "1.0.x",
-		"metrics-tracker-client": "^0.1.9"
+		"cfenv": "1.0.x"
 	},
 	"repository": {},
 	"engines": {
 		"node": "6.x"
-	} 
+	}
 }
