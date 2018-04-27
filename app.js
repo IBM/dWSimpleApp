@@ -12,9 +12,6 @@ var express = require('express');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
-// Track deployments to Bluemix
-require('metrics-tracker-client').track();
-
 // create a new express server
 var app = express();
 
@@ -24,8 +21,8 @@ app.use(express.static(__dirname + '/public'));
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
 
-// set the port number based on the environment variable, 
-// if it exists. Otherwise, use port 6006. 
+// set the port number based on the environment variable,
+// if it exists. Otherwise, use port 6006.
 var port = cfenv.getAppEnv() || 6006;
 
 // start server on the specified port and binding host
